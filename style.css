@@ -89,16 +89,31 @@ body {
   border-radius: 50%;
   margin-left: auto;
   z-index: 9;
-  background-color: var(--grayish-blue);
+  background-color: var(--light-grayish-blue);
   cursor: pointer;
+  transition: background-color 300ms ease;
 }
 
-.share-button-icon {
+.share-button:hover,
+.share-button:active,
+.share-button:hover .share-button-icon,
+.share-button:active .share-button-icon {
+  background-color: var(--desaturated-dark-blue);
   fill: #fff;
 }
 
+.share-button-icon {
+  fill: var(--desaturated-dark-blue);
+}
+
+.share-button.active,
+.share-button.active .share-button-icon {
+  fill: #fff;
+  background-color: var(--grayish-blue);
+}
+
 .preview-share-tab {
-  display: flex;
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -107,6 +122,10 @@ body {
   background-color: var(--very-dark-grayish-blue);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+
+.preview-share-tab.active {
+  display: flex;
 }
 
 .preview-share-tab > * {
