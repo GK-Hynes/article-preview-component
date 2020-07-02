@@ -13,7 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid rebeccapurple;
+  /* outline: 1px solid rebeccapurple; */
 }
 
 body {
@@ -42,12 +42,15 @@ body {
 .preview-img {
   width: 100%;
   object-fit: cover;
+  height: 55vw;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
 .preview-body {
   padding: 2rem 2rem 1rem 2rem;
+  height: 100%;
+  width: 100%;
 }
 
 .preview-title {
