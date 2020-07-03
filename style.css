@@ -5,6 +5,8 @@
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+  --box-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 *,
@@ -37,6 +39,7 @@ body {
   position: relative;
   max-width: 730px;
   z-index: 1;
+  box-shadow: var(--box-shadow-md);
 }
 
 .preview-img {
@@ -219,6 +222,7 @@ body {
     padding: 1rem 2rem;
     right: -10%;
     bottom: 35%;
+    box-shadow: var(--box-shadow-md);
   }
 
   .preview-share-tab::before {
